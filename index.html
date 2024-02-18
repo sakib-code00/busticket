@@ -6,9 +6,15 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>P-TICKET</title>
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+      }
+    </style>
 </head>
-<body>
-    <header class="w-11/12 mx-auto">
+<body >
+    <header class=" w-full lg:w-11/12 mx-auto">
         <nav class=" mx-auto my-5">
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
@@ -17,7 +23,10 @@
                       <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                     </div>
                     <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                      <li><a>Item 1</a></li>
+                      <li><a>Home</a></li>
+                      <li><a>About</a></li>
+                      <li><a>Destination</a></li>
+                      <li><a>Search</a></li>
                     </ul>
                   </div>
                   <a class="btn btn-ghost text-3xl font-extrabold">P-TICKET</a>
@@ -35,10 +44,10 @@
                 </div>
               </div>
         </nav>
-        <div id="hero section" class="mx-auto text-center bg-[url('images/banner.png')] bg-no-repeat bg-cover bg-center p-16 rounded-3xl">
+        <div id="hero section" class=" w-full mx-auto text-center bg-[url('images/banner.png')] bg-no-repeat bg-cover bg-center p-16 rounded-3xl">
             <h1 class="text-5xl text-white font-extrabold mt-5">End-to-End Travel with</h1>
             <h2 class="text-5xl font-extrabold text-green-500 mt-5">P Paribahan</h2>
-            <p class="w-1/2 text-center mx-auto mt-5 text-white">Yes, you can run unit tests and view the results directly within the app. The
+            <p class="lg:w-1/2 text-center mx-auto mt-5 text-white">Yes, you can run unit tests and view the results directly within the app. The
                 integrated testing features allow for a streamlined .</p>
             <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg m-5 bg-green-500 text-black border-none font-bold">Buy Tickets</button>
 
@@ -48,11 +57,11 @@
 
 
       <!-- Coupon Section -->
-      <div id="offer-section" class="w-11/12 mx-auto">
+      <div id="offer-section" class="lg:w-11/12 mx-auto">
         <h1 class="text-3xl text-center font-bold my-5">Best offers for you</h1>
-        <div class="flex justify-center gap-5 my-10">
-          <div class="w-1/2 mx-auto">
-            <div class="bg-[#F7B90F] rounded-3xl flex">
+        <div class="lg:flex lg:justify-center lg:gap-5 my-10">
+          <div class="lg:w-1/2 mx-auto">
+            <div class="bg-[#F7B90F] rounded-3xl flex my-5">
               <div class=" m-auto p-6 w-1/2">
                 <h1 class="text-3xl font-extrabold">50% OFF</h1>
                 <p class="font-bold">on your next purchase</p>
@@ -71,8 +80,8 @@
             <div></div>
           </div>
 
-          <div class="w-1/2 mx-auto">
-            <div class="bg-[#F78C9C] rounded-3xl flex">
+          <div class="lg:w-1/2 mx-auto">
+            <div class=" bg-[#F78C9C] rounded-3xl flex my-5">
               <div class=" m-auto p-6 w-1/2">
                 <h1 class="text-3xl font-extrabold">20% OFF</h1>
                 <p class="font-bold">on your next purchase</p>
@@ -96,27 +105,27 @@
         </div>
       </div>
 
-      <div class="w-full mt-24 px-12 bg-slate-100 border-t-2 border-green-500 rounded-t-3xl   flex justify-center items-center">
-        <div class="w-11/12">
-          <h1 class="text-3xl font-bold mb-5 text-center">P.H Paribahan</h1>
-          <p class=" text-xl text-gray-400 text-center w-9/12 mx-auto">Yes, you can run unit tests and view the results directly within the app. The integrated
+      <div class="w-full mt-24 px-12 bg-slate-100 border-t-2 border-green-500 rounded-t-3xl  lg:flex lg:justify-center lg:items-center">
+        <div class="lg:w-11/12">
+          <h1 class="text-3xl font-bold mb-5 text-center mt-5">P.H Paribahan</h1>
+          <p class=" text-xl text-gray-400 text-center lg:w-9/12 mx-auto">Yes, you can run unit tests and view the results directly within the app. The integrated
           testing features allow for a streamlined .</p>
 
-          <div class="bg-white rounded-3xl my-5 p-5 flex justify-center items-center">
+          <div class="bg-white lg:rounded-3xl my-5 p-5 lg:flex lg:justify-center lg:items-center">
             <div class="">
-              <div class="flex justify-between">
+              <div class="lg:flex lg:justify-between">
                 <div>
-                  <div class="flex justify-between">
-                  <div>
+                  <div class="lg:flex lg:justify-between">
+                  <div class="flex justify-center items-center">
                     <img src="images/bus-logo.png" alt="">
                   </div>
-                  <div class="ml-3">
-                    <h1 class="text-2xl font-bold">Greenline Paribahan</h1>
+                  <div class="ml-3 my-5">
+                    <h1 class="lg:text-2xl font-bold">Greenline Paribahan</h1>
                     <p class="text-gray-400 text-lg">Coach-009-WEB ! AC_Business</p>
                   </div>
                 </div>
                 </div>
-                <div class="navbar-end">
+                <div class="navbar-end  mx-auto flex items-center my-5">
                   <a class="btn bg-[#E8FAE6] text-green-500 border-2 border-green-500"><img src="images/seat-green.png" alt=""> 40 seats left</a>
                 </div>
               </div>
@@ -135,21 +144,21 @@
                   <hr class="border">
                 </div>
 
-                <div class="flex justify-around items-center gap-3">
-                  <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">Boarding Point - Laxmipur</button>
-                  <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">Dropping Point - Bogura Est.</button>
-                  <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">Time - 11 Hour</button>
+                <div class=" w-full lg:flex lg:justify-around lg:items-center lg:gap-3">
+                  <button class="btn btn-xs sm:btn-sm md:btn-md mb-3 lg:btn-lg mr-3">Boarding Point - Laxmipur</button>
+                  <button class="btn btn-xs sm:btn-sm md:btn-md mb-3 lg:btn-lg mr-3">Dropping Point - Bogura Est.</button>
+                  <button class="btn btn-xs sm:btn-sm md:btn-md mb-3 lg:btn-lg mr-3">Time - 11 Hour</button>
                 </div>
               </div>
             </div>
 
             <!-- ticket price -->
             <div class="">
-              <div class="flex justify-center items-center">
-                <div>
+              <div class="lg:flex lg:justify-center lg:items-center">
+                <div class="flex justify-center items-center">
                   <img class="mx-3" src="images/info-devider.png" alt="">
                 </div>
-                <div>
+                <div class="mx-auto">
                   <img src="images/fare.png" alt="">
                   <h1 class="text-2xl font-bold">550 Taka</h1>
                   <h3 class="text-xl text-gray-400">Per Seat</h3>
@@ -161,10 +170,10 @@
       </div>
 
       <!-- Seat Booking Section -->
-      <div class="flex justify-center items-center bg-slate-100">
-        <div class=" p-5 rounded-t-3xl bg-white w-11/12 flex justify-evenly items-center">
+      <div class="lg:flex lg:justify-center lg:items-center">
+        <div class=" p-5 rounded-t-3xl bg-white lg:w-11/12 lg:flex lg:justify-evenly lg:items-center">
           <!-- seats -->
-          <div class="w-1/2 p-5 mx-auto mt-5">
+          <div class="lg:w-1/2 p-5 mx-auto mt-5">
             <div>
               <h1 class="text-2xl font-bold mb-5">Select Your Seat </h1>
               <hr class="border">
@@ -200,7 +209,7 @@
           </div>
   
           <!-- seats second -->
-          <div class=" bg-slate-100 rounded-3xl p-12 w-1/2">
+          <div class=" bg-slate-100 rounded-3xl p-5 lg:p-12 lg:w-1/2">
             <div>
               <h1 class="text-2xl font-bold mb-5">Select Your Seat</h1>
               <hr class="border">
